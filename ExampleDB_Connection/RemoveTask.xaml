@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:ExampleDB_Connection"
         mc:Ignorable="d"
         Title="RemoveTask" Height="200" Width="200"
-        ResizeMode="NoResize">
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        Background="#2a382f" Foreground="#1fe554">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
@@ -24,7 +25,7 @@
         </Grid.RowDefinitions>
 
         <TextBlock Grid.Column="1" Grid.Row="1" Margin="5" Width="140">
-            
+            Enter the ID to remove
         </TextBlock>
 
         <TextBox x:Name="Input"

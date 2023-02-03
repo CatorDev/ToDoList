@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ExampleDB_Connection"
         mc:Ignorable="d"
-        Title="Add new Task" Height="300" Width="400">
+        Title="Add new Task" Height="300" Width="400"
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        Background="#2a382f" Foreground="#1fe554">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
@@ -52,11 +54,11 @@
             <StackPanel Orientation="Vertical" Width="160" Margin="5">
                 <TextBox x:Name="Content"
                     Margin="5" Width="150"></TextBox>
-                <RadioButton x:Name="Incomplete" GroupName="State"
+                <RadioButton x:Name="Incomplete" GroupName="State" Foreground="#1fe554"
                     Margin="5">Incomplete</RadioButton>
-                <RadioButton x:Name="InProgress" GroupName="State"
+                <RadioButton x:Name="InProgress" GroupName="State" Foreground="#1fe554"
                     Margin="5">In Progress</RadioButton>
-                <RadioButton x:Name="Complete" GroupName="State"
+                <RadioButton x:Name="Complete" GroupName="State" Foreground="#1fe554"
                     Margin="5">Complete</RadioButton>
             </StackPanel>
         </StackPanel>

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Text;
+using System.Windows;
 using System.Windows.Automation;
 using Vorlage_Klausur;
 
@@ -9,7 +10,7 @@ namespace ExampleDB_Connection
 {
     internal class ToDo_Collection
     {
-        internal List<ToDo> to_do_list = new List<ToDo>(); // creates new List to store ToDo's
+        internal List<ToDo> to_do_list = new List<ToDo>(); // creates new List to store Tasks
 
         internal DB_Connection db_connection = new DB_Connection(); // creates new Sql Connection
 
@@ -49,6 +50,7 @@ namespace ExampleDB_Connection
 
         public void DeleteToDo(int id) {
             db_connection.WriteData("DELETE FROM todo WHERE id = " + Convert.ToString(id));
+            MessageBox.Show("Successfully removed Task with id " + id);
         }
     }
 }

@@ -1,0 +1,8 @@
+CREATE DATABASE tododb;
+
+CREATE TABLE todo(
+    id int AUTO_INCREMENT NOT NULL,
+    PRIMARY KEY(id),
+    content varchar(50),
+    `status` int
+    );

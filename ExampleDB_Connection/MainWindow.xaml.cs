@@ -29,6 +29,7 @@ namespace ExampleDB_Connection
         {
             InitializeComponent();
             ToDoList.ItemsSource = ioc.to_do_collection.GetAllTodos();
+            ioc.to_do_collection.to_do_list = ioc.to_do_collection.GetAllTodos();
         }
 
         private void MarkAsDone_Click(object sender, RoutedEventArgs e)
@@ -46,11 +47,14 @@ namespace ExampleDB_Connection
             AddTask temp = new AddTask(ioc);
             temp.Show();
             // executes code, when the temporary window closes
-            temp.Closing += (s, e) => { ToDoList.ItemsSource = ioc.to_do_collection.GetAllTodos(); };
+            temp.Closing += (s, e) => { ToDoList.ItemsSource = ioc.to_do_collection.GetAllTodos(); ioc.to_do_collection.to_do_list = ioc.to_do_collection.GetAllTodos(); };
         }
 
         private void DeleteTask_Click(object sender, RoutedEventArgs e)
         {
+            RemoveTask temp = new RemoveTask(ioc);
+            temp.Show();
+            temp.Closing += (s, e) => { ToDoList.ItemsSource = ioc.to_do_collection.GetAllTodos(); ioc.to_do_collection.to_do_list = ioc.to_do_collection.GetAllTodos(); };
         }
     }
 }
