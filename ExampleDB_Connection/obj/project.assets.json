@@ -902,11 +902,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "A:\\Coding\\C#\\Repos\\ToDoList\\ExampleDB_Connection\\ExampleDB_Connection.csproj",
+      "projectUniqueName": "C:\\Users\\m4tea\\Desktop\\Fächer\\IT\\SWE\\C#\\Repos\\DB Connection Neu\\ExampleDB_Connection\\ExampleDB_Connection.csproj",
       "projectName": "ExampleDB_Connection",
-      "projectPath": "A:\\Coding\\C#\\Repos\\ToDoList\\ExampleDB_Connection\\ExampleDB_Connection.csproj",
+      "projectPath": "C:\\Users\\m4tea\\Desktop\\Fächer\\IT\\SWE\\C#\\Repos\\DB Connection Neu\\ExampleDB_Connection\\ExampleDB_Connection.csproj",
       "packagesPath": "C:\\Users\\m4tea\\.nuget\\packages\\",
-      "outputPath": "A:\\Coding\\C#\\Repos\\ToDoList\\ExampleDB_Connection\\obj\\",
+      "outputPath": "C:\\Users\\m4tea\\Desktop\\Fächer\\IT\\SWE\\C#\\Repos\\DB Connection Neu\\ExampleDB_Connection\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\m4tea\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -951,6 +951,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.1.31, 3.1.31]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -959,7 +965,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

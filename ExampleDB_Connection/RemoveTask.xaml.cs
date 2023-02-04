@@ -15,6 +15,8 @@ namespace ExampleDB_Connection
     /// <summary>
     /// Interaktionslogik für RemoveTask.xaml
     /// </summary>
+    ///
+
     public partial class RemoveTask : Window
     {
         IO_Controller localIOC;

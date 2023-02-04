@@ -32,7 +32,7 @@ namespace ExampleDB_Connection
             ioc.to_do_collection.to_do_list = ioc.to_do_collection.GetAllTodos();
         }
 
-        private void MarkAsDone_Click(object sender, RoutedEventArgs e)
+        private void MarkAsIncomplete_Click(object sender, RoutedEventArgs e)
         {
 
         }
@@ -42,6 +42,12 @@ namespace ExampleDB_Connection
 
         }
 
+        private void MarkAsComplete_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+
         private void AddTask_Click(object sender, RoutedEventArgs e)
         {
             AddTask temp = new AddTask(ioc);
@@ -50,11 +56,65 @@ namespace ExampleDB_Connection
             temp.Closing += (s, e) => { ToDoList.ItemsSource = ioc.to_do_collection.GetAllTodos(); ioc.to_do_collection.to_do_list = ioc.to_do_collection.GetAllTodos(); };
         }
 
+        private void UpdateTask_Click(object sender, RoutedEventArgs e)
+        {
+            // converts the currently selected object in the datagrid to a "ToDo" object
+            ToDo selectedTask = ToDoList.SelectedItem as ToDo;
+
+            // checks if the task was casted sucessfully or if none was selected
+            if (selectedTask != null)
+            {
+            }
+            else
+            {
+                MessageBox.Show("No Task selected!");
+            }
+        }
+
         private void DeleteTask_Click(object sender, RoutedEventArgs e)
         {
-            RemoveTask temp = new RemoveTask(ioc);
-            temp.Show();
-            temp.Closing += (s, e) => { ToDoList.ItemsSource = ioc.to_do_collection.GetAllTodos(); ioc.to_do_collection.to_do_list = ioc.to_do_collection.GetAllTodos(); };
+            // converts the currently selected object in the datagrid to a "ToDo" object
+            ToDo selectedTask = ToDoList.SelectedItem as ToDo;
+
+            // checks if the task was casted sucessfully or if none was selected
+            if (selectedTask != null)
+            {
+                MessageBoxResult result = MessageBox.Show("Are you sure, you want to Delete the task " + selectedTask.Content, "Yes or No?", MessageBoxButton.YesNo);
+
+                // asks for confirmation, if the user wants to delete the selected task
+                switch (result)
+                {
+                    case MessageBoxResult.Yes:
+                        // deletes the entity inside of the database, if the id matches
+                        ioc.to_do_collection.db_connection.WriteData("DELETE from todo WHERE id = " + Convert.ToString(selectedTask.ID));
+
+                        // finally refreshes the local list and the datagrid aswell
+                        ToDoList.ItemsSource = ioc.to_do_collection.GetAllTodos(); ioc.to_do_collection.to_do_list = ioc.to_do_collection.GetAllTodos();
+
+                        // Confirmation Message
+                        MessageBox.Show("Deleted Task " + selectedTask.Content + " with ID " + Convert.ToString(selectedTask.ID) + ".");
+                        break;
+                    case MessageBoxResult.No:
+                        MessageBox.Show("Deletion Canceled!");
+                        break;
+                    default:
+                        break;
+                }
+            }
+            else
+            {
+                MessageBox.Show("No Task selected!");
+            }
+        }
+
+        private void DeleteTaskByID_Click(object sender, RoutedEventArgs e)
+        {
+            // creates a new Window with type RemoveTask
+            RemoveTask window = new RemoveTask(ioc);
+            window.Show();
+
+            // executes code, when the window closes
+            window.Closing += (s, e) => { ToDoList.ItemsSource = ioc.to_do_collection.GetAllTodos(); ioc.to_do_collection.to_do_list = ioc.to_do_collection.GetAllTodos(); };
         }
     }
 }

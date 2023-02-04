@@ -62,3 +62,36 @@ A:\Coding\C#\Repos\ToDoList\ExampleDB_Connection\obj\Debug\netcoreapp3.1\Example
 A:\Coding\C#\Repos\ToDoList\ExampleDB_Connection\obj\Debug\netcoreapp3.1\ExampleDB_Connection.csproj.CoreCompileInputs.cache
 A:\Coding\C#\Repos\ToDoList\ExampleDB_Connection\obj\Debug\netcoreapp3.1\ExampleDB_Connection.csproj.CopyComplete
 A:\Coding\C#\Repos\ToDoList\ExampleDB_Connection\obj\Debug\netcoreapp3.1\ExampleDB_Connection.genruntimeconfig.cache
+C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\bin\Debug\netcoreapp3.1\ExampleDB_Connection.exe
+C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\bin\Debug\netcoreapp3.1\ExampleDB_Connection.deps.json
+C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\bin\Debug\netcoreapp3.1\ExampleDB_Connection.runtimeconfig.json
+C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\bin\Debug\netcoreapp3.1\ExampleDB_Connection.runtimeconfig.dev.json
+C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\bin\Debug\netcoreapp3.1\ExampleDB_Connection.dll
+C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\bin\Debug\netcoreapp3.1\ExampleDB_Connection.pdb
+C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
+C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll
+C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.Streams.dll
+C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\bin\Debug\netcoreapp3.1\K4os.Hash.xxHash.dll
+C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\bin\Debug\netcoreapp3.1\MySql.Data.dll
+C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\bin\Debug\netcoreapp3.1\ZstdNet.dll
+C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\obj\Debug\netcoreapp3.1\ExampleDB_Connection.csproj.AssemblyReference.cache
+C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\obj\Debug\netcoreapp3.1\AddTask.g.cs
+C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\obj\Debug\netcoreapp3.1\RemoveTask.g.cs
+C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\obj\Debug\netcoreapp3.1\ExampleDB_Connection_MarkupCompile.cache
+C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\obj\Debug\netcoreapp3.1\ExampleDB_Connection_MarkupCompile.lref
+C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\obj\Debug\netcoreapp3.1\AddTask.baml
+C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\obj\Debug\netcoreapp3.1\RemoveTask.baml
+C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\obj\Debug\netcoreapp3.1\ExampleDB_Connection.g.resources
+C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\obj\Debug\netcoreapp3.1\ExampleDB_Connection.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\obj\Debug\netcoreapp3.1\ExampleDB_Connection.AssemblyInfoInputs.cache
+C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\obj\Debug\netcoreapp3.1\ExampleDB_Connection.AssemblyInfo.cs
+C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\obj\Debug\netcoreapp3.1\ExampleDB_Connection.csproj.CoreCompileInputs.cache
+C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\obj\Debug\netcoreapp3.1\ExampleDB_Connection.csproj.CopyComplete
+C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\obj\Debug\netcoreapp3.1\ExampleDB_Connection.dll
+C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\obj\Debug\netcoreapp3.1\ExampleDB_Connection.pdb
+C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\obj\Debug\netcoreapp3.1\ExampleDB_Connection.genruntimeconfig.cache

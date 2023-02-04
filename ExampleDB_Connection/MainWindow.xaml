@@ -28,23 +28,41 @@
         </TextBlock>
 
         <StackPanel Grid.Column="1" Grid.Row="2" Orientation="Horizontal" Margin="10">
-            <DataGrid x:Name="ToDoList" MinWidth="800" MinHeight="200"></DataGrid>
+            <DataGrid x:Name="ToDoList" MinWidth="200" MinHeight="200"></DataGrid>
             <StackPanel Orientation="Vertical" Margin="5">
-                <Button x:Name="MarkAsDone" Click="MarkAsDone_Click"
-                    Width="125" Height="25" Margin="5">
-                    Mark as "Done!"
+                <TextBlock>
+                    Change Status
+                </TextBlock>
+                <Button x:Name="MarkAsIncomplete" Click="MarkAsIncomplete_Click"
+                    Width="200" Height="25" Margin="5">
+                    Mark Selected Task as Incomplete
                 </Button>
                 <Button x:Name="MarkAsInProgress" Click="MarkAsInProgress_Click"
-                    Width="125" Height="25" Margin="5">
-                    Mark as "In Progress
+                    Width="200" Height="25" Margin="5">
+                    Mark Selected Task as In Progress
                 </Button>
+                <Button x:Name="MarkAsComplete" Click="MarkAsComplete_Click"
+                    Width="200" Height="25" Margin="5">
+                    Mark Selected Task as Complete
+                </Button>
+                <TextBlock>
+                    Manage Tasks
+                </TextBlock>
                 <Button x:Name="AddTask" Click="AddTask_Click"
-                    Width="125" Height="25" Margin="5">
+                    Width="200" Height="25" Margin="5">
                     Add Task
                 </Button>
+                <Button x:Name="UpdateTask" Click="UpdateTask_Click"
+                    Width="200" Height="25" Margin="5">
+                    Update Selected Task
+                </Button>
                 <Button x:Name="DeleteTask" Click="DeleteTask_Click"
-                    Width="125" Height="25" Margin="5">
-                    Delete Task
+                    Width="200" Height="25" Margin="5">
+                    Delete Selected Task
+                </Button>
+                <Button x:Name="DeleteTaskByID" Click="DeleteTaskByID_Click"
+                    Width="200" Height="25" Margin="5">
+                    Delete Task by ID
                 </Button>
             </StackPanel>
         </StackPanel>
