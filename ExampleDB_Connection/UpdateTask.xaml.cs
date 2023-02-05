@@ -17,9 +17,23 @@ namespace ExampleDB_Connection
     /// </summary>
     public partial class UpdateTask : Window
     {
-        public UpdateTask()
+        private ToDo localTask;
+        private IO_Controller localIOC;
+        public UpdateTask(IO_Controller globalIOC,ToDo globalTask)
         {
             InitializeComponent();
+
+            localTask = globalTask;
+
+            HeadText.Text = "Update Task: " + localTask.Content;
+
+            CurrentContent.Text = localTask.Content;
+            CurrentStatus.Text = localTask.Status;
+        }
+
+        private void ConfirmUpdate_Click(object sender, RoutedEventArgs e)
+        {
+            string id = Convert.ToString(localTask.ID);
         }
     }
 }

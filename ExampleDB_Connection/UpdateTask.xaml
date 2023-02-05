@@ -5,8 +5,62 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ExampleDB_Connection"
         mc:Ignorable="d"
-        Title="UpdateTask" Height="450" Width="800">
+        Title="UpdateTask" Height="300" Width="400"
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        Background="#2a382f" Foreground="#1fe554">
     <Grid>
-        
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="HeadText"
+            Grid.Column="1" Grid.Row="1">
+            Update Task
+        </TextBlock>
+
+        <StackPanel Orientation="Horizontal"
+            Grid.Column="1" Grid.Row="2">
+            <StackPanel Orientation="Vertical" Width="150" Margin="5">
+                <TextBlock Margin="5">Current Content</TextBlock>
+                <CheckBox x:Name="UpdateContent" DataContextChanged="UpdateContent_DataContextChanged"
+                        IsChecked="True" Margin="5">
+                    <TextBlock  Foreground="#1fe554">Updated Content</TextBlock>
+                </CheckBox>
+                <TextBlock Margin="5">Current Status</TextBlock>
+                <TextBlock Margin="5">New Status</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Width="160" Margin="5">
+                <TextBox x:Name="CurrentContent" IsReadOnly="True"
+                    Margin="5" Width="150"></TextBox>
+                <TextBox x:Name="NewContent"
+                    Margin="5" Width="150"></TextBox>
+                <TextBox x:Name="CurrentStatus" IsReadOnly="True"
+                    Margin="5" Width="150"></TextBox>
+                <RadioButton x:Name="Incomplete" GroupName="State" Foreground="#1fe554"
+                    Margin="5">Incomplete</RadioButton>
+                <RadioButton x:Name="InProgress" GroupName="State" Foreground="#1fe554"
+                    Margin="5">In Progress</RadioButton>
+                <RadioButton x:Name="Complete" GroupName="State" Foreground="#1fe554"
+                    Margin="5">Complete</RadioButton>
+            </StackPanel>
+        </StackPanel>
+        <Button x:Name="ConfirmUpdate" Click=""
+            Grid.Column="1" Grid.Row="3"
+            Width="150" Height="20">
+            Confirm Update
+        </Button>
     </Grid>
 </Window>

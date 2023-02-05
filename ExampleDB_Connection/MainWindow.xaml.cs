@@ -50,10 +50,11 @@ namespace ExampleDB_Connection
 
         private void AddTask_Click(object sender, RoutedEventArgs e)
         {
-            AddTask temp = new AddTask(ioc);
-            temp.Show();
+            AddTask window = new AddTask(ioc);
+            window.Show();
+
             // executes code, when the temporary window closes
-            temp.Closing += (s, e) => { ToDoList.ItemsSource = ioc.to_do_collection.GetAllTodos(); ioc.to_do_collection.to_do_list = ioc.to_do_collection.GetAllTodos(); };
+            window.Closing += (s, e) => { ToDoList.ItemsSource = ioc.to_do_collection.GetAllTodos(); ioc.to_do_collection.to_do_list = ioc.to_do_collection.GetAllTodos(); };
         }
 
         private void UpdateTask_Click(object sender, RoutedEventArgs e)
@@ -64,6 +65,9 @@ namespace ExampleDB_Connection
             // checks if the task was casted sucessfully or if none was selected
             if (selectedTask != null)
             {
+                UpdateTask window = new UpdateTask(ioc,selectedTask);
+                window.Show();
+                window.Closing += (s, e) => { ToDoList.ItemsSource = ioc.to_do_collection.GetAllTodos(); ioc.to_do_collection.to_do_list = ioc.to_do_collection.GetAllTodos(); };
             }
             else
             {

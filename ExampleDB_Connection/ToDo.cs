@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ExampleDB_Connection
 {
-    internal class ToDo
+    public class ToDo
     {
         public ToDo() { }
 

@@ -95,3 +95,5 @@ C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Conne
 C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\obj\Debug\netcoreapp3.1\ExampleDB_Connection.dll
 C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\obj\Debug\netcoreapp3.1\ExampleDB_Connection.pdb
 C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\obj\Debug\netcoreapp3.1\ExampleDB_Connection.genruntimeconfig.cache
+C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\obj\Debug\netcoreapp3.1\UpdateTask.g.cs
+C:\Users\m4tea\Desktop\Fächer\IT\SWE\C#\Repos\DB Connection Neu\ExampleDB_Connection\obj\Debug\netcoreapp3.1\UpdateTask.baml
