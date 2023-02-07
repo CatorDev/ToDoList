@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ExampleDB_Connection"
         mc:Ignorable="d"
-        Title="UpdateTask" Height="300" Width="400"
+        Title="UpdateTask" Height="300" Width="500"
         ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
         Background="#2a382f" Foreground="#1fe554">
     <Grid>
@@ -35,20 +35,23 @@
             Grid.Column="1" Grid.Row="2">
             <StackPanel Orientation="Vertical" Width="150" Margin="5">
                 <TextBlock Margin="5">Current Content</TextBlock>
-                <CheckBox x:Name="UpdateContent" DataContextChanged="UpdateContent_DataContextChanged"
+                <CheckBox x:Name="UpdateContent"
                         IsChecked="True" Margin="5">
                     <TextBlock  Foreground="#1fe554">Updated Content</TextBlock>
                 </CheckBox>
                 <TextBlock Margin="5">Current Status</TextBlock>
-                <TextBlock Margin="5">New Status</TextBlock>
+                <CheckBox x:Name="UpdateStatus"
+                        IsChecked="True" Margin="5">
+                    <TextBlock Foreground="#1fe554">New Status</TextBlock>
+                </CheckBox>
             </StackPanel>
-            <StackPanel Orientation="Vertical" Width="160" Margin="5">
+            <StackPanel Orientation="Vertical" Width="200" Margin="5">
                 <TextBox x:Name="CurrentContent" IsReadOnly="True"
-                    Margin="5" Width="150"></TextBox>
+                    Margin="5" Width="200"></TextBox>
                 <TextBox x:Name="NewContent"
-                    Margin="5" Width="150"></TextBox>
+                    Margin="5" Width="200"></TextBox>
                 <TextBox x:Name="CurrentStatus" IsReadOnly="True"
-                    Margin="5" Width="150"></TextBox>
+                    Margin="5" Width="200"></TextBox>
                 <RadioButton x:Name="Incomplete" GroupName="State" Foreground="#1fe554"
                     Margin="5">Incomplete</RadioButton>
                 <RadioButton x:Name="InProgress" GroupName="State" Foreground="#1fe554"
@@ -57,7 +60,7 @@
                     Margin="5">Complete</RadioButton>
             </StackPanel>
         </StackPanel>
-        <Button x:Name="ConfirmUpdate" Click=""
+        <Button x:Name="ConfirmUpdate" Click="ConfirmUpdate_Click"
             Grid.Column="1" Grid.Row="3"
             Width="150" Height="20">
             Confirm Update

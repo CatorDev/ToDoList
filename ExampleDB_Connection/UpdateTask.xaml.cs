@@ -24,6 +24,7 @@ namespace ExampleDB_Connection
             InitializeComponent();
 
             localTask = globalTask;
+            localIOC = globalIOC;
 
             HeadText.Text = "Update Task: " + localTask.Content;
 
@@ -33,7 +34,43 @@ namespace ExampleDB_Connection
 
         private void ConfirmUpdate_Click(object sender, RoutedEventArgs e)
         {
-            string id = Convert.ToString(localTask.ID);
+            int id = localTask.ID;
+            string content = localTask.Content;
+            int status = 0;
+
+            if (UpdateContent.IsChecked == true)
+            {
+                content =  NewContent.Text;
+            }
+
+            if(UpdateStatus.IsChecked == true)
+            {
+                if (Incomplete.IsChecked == true)
+                {
+                    status = 0;
+                }
+
+                if (InProgress.IsChecked == true)
+                {
+                    status = 1;
+                }
+
+                if (Complete.IsChecked == true)
+                {
+                    status = 2;
+                }
+            }
+
+            if (UpdateContent.IsChecked == false && UpdateStatus.IsChecked == false) 
+            {
+                MessageBox.Show("Nothing will change, please enable at least one of the updates!");
+            }
+            else
+            {
+                localIOC.to_do_collection.UpdateToDo(id, content, status);
+                MessageBox.Show("Updated Task");
+                this.Close();
+            }
         }
     }
 }

@@ -17,7 +17,7 @@ namespace ExampleDB_Connection
         public List<ToDo> GetAllTodos()
         {
             List<ToDo> output = new List<ToDo>();
-            DataTable dataTable = db_connection.ReadData("SELECT * FROM todo"); // returns complete sql table "todo"
+            DataTable dataTable = db_connection.ReadData("SELECT * FROM todo"); // returns complete DataTable "todo"
 
             foreach (DataRow row in dataTable.Rows)
             {
@@ -51,6 +51,12 @@ namespace ExampleDB_Connection
         public void DeleteToDo(int id) {
             db_connection.WriteData("DELETE FROM todo WHERE id = " + Convert.ToString(id));
             MessageBox.Show("Successfully removed Task with id " + id);
+        }
+
+        public void UpdateToDo(int id, string content, int status) {
+
+            db_connection.WriteData("UPDATE todo SET content = '" + content + "', status = " + Convert.ToString(status) + " WHERE id = " + Convert.ToString(id) + "");
+
         }
     }
 }

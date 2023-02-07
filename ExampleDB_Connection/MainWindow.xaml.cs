@@ -32,22 +32,6 @@ namespace ExampleDB_Connection
             ioc.to_do_collection.to_do_list = ioc.to_do_collection.GetAllTodos();
         }
 
-        private void MarkAsIncomplete_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void MarkAsInProgress_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void MarkAsComplete_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-
         private void AddTask_Click(object sender, RoutedEventArgs e)
         {
             AddTask window = new AddTask(ioc);

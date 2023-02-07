@@ -22,29 +22,12 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
-
         <TextBlock Grid.Column="1" Grid.Row="1" FontSize="20" Margin="10">
             To-Do List
         </TextBlock>
-
         <StackPanel Grid.Column="1" Grid.Row="2" Orientation="Horizontal" Margin="10">
-            <DataGrid x:Name="ToDoList" MinWidth="200" MinHeight="200"></DataGrid>
+            <DataGrid x:Name="ToDoList" MinWidth="400" MinHeight="200"></DataGrid>
             <StackPanel Orientation="Vertical" Margin="5">
-                <TextBlock>
-                    Change Status
-                </TextBlock>
-                <Button x:Name="MarkAsIncomplete" Click="MarkAsIncomplete_Click"
-                    Width="200" Height="25" Margin="5">
-                    Mark Selected Task as Incomplete
-                </Button>
-                <Button x:Name="MarkAsInProgress" Click="MarkAsInProgress_Click"
-                    Width="200" Height="25" Margin="5">
-                    Mark Selected Task as In Progress
-                </Button>
-                <Button x:Name="MarkAsComplete" Click="MarkAsComplete_Click"
-                    Width="200" Height="25" Margin="5">
-                    Mark Selected Task as Complete
-                </Button>
                 <TextBlock>
                     Manage Tasks
                 </TextBlock>
